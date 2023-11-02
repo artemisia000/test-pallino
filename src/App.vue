@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavMenu/>
+
+    <HeaderWwf/>
+
+    <ProgressBarNumbers/>
+
+    <MainWwf/>
+
+
+    <FooterWwf/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavMenu from './components/NavMenu.vue';
+import HeaderWwf from "./components/HeaderWwf.vue";
+import FooterWwf from "./components/FooterWwf.vue";
+import ProgressBarNumbers from "./components/ProgressBarNumbers.vue";
+import MainWwf from "./components/MainWwf.vue";
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavMenu,
+    HeaderWwf,
+    FooterWwf,
+    ProgressBarNumbers,
+    MainWwf,
   }
 }
 </script>
