@@ -82,11 +82,16 @@
 </template>
 
 <script>
+import dropMenu from '@/data/navmenu.js'
 
 
 export default {
   name: 'NavMenu',
-
+  data() {
+  return {
+    navmenu: dropMenu,
+     }
+  },
 }
 
 </script>

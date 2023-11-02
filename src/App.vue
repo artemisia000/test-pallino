@@ -8,6 +8,8 @@
       <ProgressBarNumbers/>
   
       <MainWwf/>
+
+      <FilterableWwf/>
   
   
       <FooterWwf/>
@@ -22,6 +24,8 @@ import HeaderWwf from "./components/HeaderWwf.vue";
 import FooterWwf from "./components/FooterWwf.vue";
 import ProgressBarNumbers from "./components/ProgressBarNumbers.vue";
 import MainWwf from "./components/MainWwf.vue";
+import FilterableWwf from "./components/FilterableWwf.vue";
+
 
 
 export default {
@@ -32,6 +36,7 @@ export default {
     FooterWwf,
     ProgressBarNumbers,
     MainWwf,
+    FilterableWwf,
   },
 };
 
