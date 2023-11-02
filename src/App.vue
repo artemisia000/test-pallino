@@ -32,8 +32,9 @@ export default {
     FooterWwf,
     ProgressBarNumbers,
     MainWwf,
-  }
-}
+  },
+};
+
 </script>
 
 <style lang="scss">
