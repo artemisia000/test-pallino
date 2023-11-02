@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <NavMenu/>
-
-    <HeaderWwf/>
-
-    <ProgressBarNumbers/>
-
-    <MainWwf/>
-
-
-    <FooterWwf/>
+    <div class="container-fluid">
+      <NavMenu/>
+  
+      <HeaderWwf/>
+  
+      <ProgressBarNumbers/>
+  
+      <MainWwf/>
+  
+  
+      <FooterWwf/>
+    </div>
 
   </div>
 </template>
@@ -35,6 +37,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import '@/styles/globals';
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
