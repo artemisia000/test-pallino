@@ -5,3 +5,12 @@
     }
     
  }
+
+ 
+@media (max-width: 576px) { 
+
+   .menu-container{
+     background-color: #fff;
+   }
+   
+}
