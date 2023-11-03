@@ -69,7 +69,6 @@ figure{
 }
 
 .w-box-filterable{
-  height: 750px;
   padding-bottom: 100px;
   border-bottom: 2px solid #000;
 }

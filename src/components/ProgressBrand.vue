@@ -2,7 +2,7 @@
     <div class=" mb-5">
       <div class="row mt-5">
         <div class="racesWrapper">
-            <div class="races">
+            <div class="races w-100">
                 <div class="w-box-brand">
                     <img src="../assets/image26.png"/>
                 </div>

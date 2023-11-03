@@ -73,8 +73,8 @@ export default {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   width: 424px;
-  height: 204px;
   flex-shrink: 0;
+  padding: 1.3rem;
   
   h1{
     font-size: 120px;

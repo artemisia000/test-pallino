@@ -38,15 +38,13 @@
     <div class="col-12 col-md-4 col-lg-3 pe-0 ps-0">
       <div class="w-box-footer">
         <ul>
-          <li><img src="../assets/fb.svg"/>Facebook</li>
-          <li><img src="../assets/is.svg"/>Instagram</li>
-          <li><img src="../assets/tw.svg"/>Twitter</li>
-          <li><img src="../assets/yt.svg"/>You Tube</li>
+          <li><img src="../assets/fb.svg" class="ms-2"/>Facebook</li>
+          <li><img src="../assets/is.svg" class="ms-2"/>Instagram</li>
+          <li><img src="../assets/tw.svg" class="ms-2"/>Twitter</li>
+          <li><img src="../assets/yt.svg" class="ms-2"/>You Tube</li>
         </ul>
       </div>
     </div>
-
-
 
   </div>
 </template>
@@ -84,6 +82,7 @@ export default {
   text-align: left;
   height: 378px;
   display: flex;
+  background-color: $grey-secondary-color;
   flex-direction: column;
   justify-content: end;
   border-bottom: 1px solid $grey-text-color;
@@ -103,7 +102,6 @@ export default {
     font-weight: 400;
     line-height: 28px;
     list-style: none;
-
   }
 }
 </style>
