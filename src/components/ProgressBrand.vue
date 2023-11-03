@@ -35,19 +35,17 @@
 
 
 <script>
-
-
+//import gsap from 'gsap';
 export default {
   name: 'ProgressBrand',
 }
 
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 @import '@/styles/variables';
 @import '@/styles/globals';
-
 
 .races {
 	width:fit-content;
@@ -55,6 +53,5 @@ export default {
 	flex-wrap:nowrap;
     justify-content: space-around;
 }
-
 
 </style>

@@ -9,7 +9,7 @@
         </span>
         <div class="col-12 col-md-4 col-lg-4">
           <div class="box-progress-number">
-            <h1 id="counter">1024</h1>
+            <h1 id="counter" ref="myElement">1024</h1>
             <div class="w-back-text">
               <span>At vero eos et accusamus</span>
             </div>
@@ -48,39 +48,23 @@
 
 
 <script>
-//import { gsap } from 'gsap'
-
-// function format_number(x) {
-//     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-// };
-
-// var
-//   counter = document.getElementById('counter'),
-//   value = {
-//     val: parseInt(counter.innerText)
-//   };
-
-// gsap.from(value, {
-//   duration: 5,
-//   ease: 'circ.out',
-//   val: 0,
-//   roundProps: 'val',
-//   onUpdate: function() {
-//     counter.innerText = format_number(value.val);
-//   }
-// })
+// import gsap from 'gsap';
+// import progressNumber from '@/progressNumber.js'
 
 
 export default {
   name: 'ProgressBarNumbers',
-  props: {
-    msg: String
-  }
+ 
+  // data() {
+  //  return {  
+  //    prog: progressNumber,
+  //   }
+  
+  // }
 }
-
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 @import '@/styles/variables';
 @import '@/styles/globals';

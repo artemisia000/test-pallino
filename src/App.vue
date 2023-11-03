@@ -33,8 +33,6 @@ import AutoCarousel from "./components/AutoCarousel.vue";
 import ProgressBrand from "./components/ProgressBrand.vue";
 
 
-
-
 export default {
   name: 'App',
   components: {
