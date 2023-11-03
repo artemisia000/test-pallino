@@ -1,10 +1,11 @@
 <template>
   <div class="hello">
     <div class="menu-container">
-      <div class="menu">
-        <ul>
+      <div class="menu d-flex">
+        <img src="../assets/LogoWwf.png"/>
+        <ul class="d-flex justify-content-center">
           <li><a href="#">Home</a></li>
-          <li><a href="http://marioloncarek.com">About</a>
+          <li><a href="#">About</a>
             <ul>
               <li><a href="#">School</a>
                 <ul>
@@ -30,23 +31,14 @@
                 </ul>
               </li>
               <li><a href="#">Something</a>
-                <ul>
-                  <li><a href="#">Sub something</a></li>
-                  <li><a href="#">Sub something</a></li>
-                  <li><a href="#">Sub something</a></li>
-                  <li><a href="#">Sub something</a></li>
-                </ul>
+                
               </li>
             </ul>
           </li>
           <li><a href="#">News</a>
-            <ul>
-              <li><a href="#">Today</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Sport</a></li>
-            </ul>
+            
           </li>
-          <li><a href="http://marioloncarek.com">Contact</a>
+          <li><a href="#">Contact</a>
             <ul>
               <li><a href="#">School</a>
                 <ul>
@@ -82,24 +74,33 @@
 </template>
 
 <script>
-import dropMenu from '@/data/navmenu.js'
+//import dropMenu from '@/data/navmenu.js'
 
 
 export default {
   name: 'NavMenu',
-  data() {
-  return {
-    navmenu: dropMenu,
-     }
-  },
+  // data() {
+  // return {
+  //   navmenu: dropMenu,
+  //    }
+  // },
 }
 
 </script>
 
 <style scoped lang="scss">
 
+.menu{
+  width: 80%;
+  margin: auto;
+
+  img{
+    width: 40px;
+  }
+}
+
 a {
-  color: #333;
+  color: #fff;
 }
 
 .description {
@@ -108,9 +109,14 @@ a {
 }
 
 .menu-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  background: #e9e9e9;
+  background: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  z-index:10;
 }
 
 .menu-mobile {
@@ -136,8 +142,7 @@ a {
     cursor: pointer;
     float: right;
     padding: 1.5em 2em;
-    background: #fff;
-    color: #333;
+    color: #fff;
   }
 }
 
@@ -161,7 +166,6 @@ a {
     }
     > li {
       float: left;
-      background: #e9e9e9;
       padding: 0;
       margin: 0;
       a {
@@ -170,12 +174,11 @@ a {
         display: block;
       }
       &:hover {
-        background: #f0f0f0;
+        border-bottom: 2px solid #f0f0f0;
       }
       > ul {
         display: none;
         width: 100%;
-        background: #f0f0f0;
         padding: 20px;
         position: absolute;
         z-index: 99;
